@@ -6,7 +6,60 @@
 	<title>Notes for (9.11.2023) Class</title>
 </head>
 <body>
-	<h3>Will upload soon</h3>
+	<h3>Anchor tag "&lt;a> &lt;/a>" (inline element) </h3>
+	<p>
+	The &lt;a> tag defines a hyperlink, which is used to link from one page to another.<br/>
 
+The most important attribute of the &lt;a> element is the href attribute, which indicates the link's destination.
+<br/>
+<b>By default, links will appear as follows in all browsers:</b>
+<ul>
+<li>An unvisited link is underlined and blue</li>
+<li>A visited link is underlined and purple</li>
+<li>An active link is underlined and red</li>
+</ul>
+use this attribute>> href="link"(href means hyper refrence)<br/>
+Codes<br/>
+&lt;a href="https://www.google.com">Click here to Google&lt;/a><br/>
+<a href="https://www.google.com">Click here to Google</a><br/>
+href="link" linkနေရာမှာ ချိတ်မယ့် Route ကို တိတိကျကျလေးထည့်ပေးရပါမယ်။ နည်းနည်းလွဲတာနဲ့မရလို့ပါ<br/>
+ခုဆို လက်ရှိ tag မှာပဲ ပွင့်လာတာကိုမြင်ရမှာပါ။ tag အသစ်နဲ့ပွင့်လာစေချင်ရင် target="_blank" ဆိုတဲ့attribute ကိုသုံးပါ<br/>
+value ၄ခုရှိပါတယ် ဆရာက ၂ခုလောက်ပဲသင်ပါတယ်။ လုံလောက်ပါတယ် default က _self ပါ<br/>
+စမ်းကြည့်ပါမယ်<br/>
+&lt;a href="https://www.google.com" target="_blank">Click here to Google&lt;/a><br/>
+<a href="https://www.google.com" target="_blank">Click here to Google</a><br/>
+tag အသစ်လေးနဲ့ပွင့်လာပါပြီ<br/>
+ကိုယ်ချိတ်ချင်တဲ့ link ကို အရင် browser မှာဖွင့် ပြီးမ addressကို copy ယူပြီးထည့်ပါ ရိုက်ထည့်ရင်မှားနိုင်ပါတယ်<br/>
+http://  https// တော့ထွေထွေထူးထူး note မလုပ်လိုပါဘူး<br/>
+ဒါက site link ချိတ်တာပါ။ File ချိတ်ကြည့်ကြရအောင်<br/>
+href="" attribute value မှာ file route ထည့်ပေးယုံပါပဲ။ <br/>
+ကိုယ့်ဖိုင်က စက်ထည်းမှာဆို စက်ထည်းက route၊ cloud မှာဆို cloud route ကိုချိတ်ပါ<br/>
+မရေးပြတော့ပါဘူး codeကတော့၊ ရှင်းပြပါမယ်<br/>
+ဖိုင်တွေချိတ်တဲ့အခါမှာ file route တွေကိုသိဖို့ command line interface ကို သုံးဖူးသူတွေအတွက်မခက်ပေမယ့်<br/>
+GUI နဲ့ပဲ အလုပ်လုပ်နေတဲ့သူတွေအတွက် ဒီသင်ခန်းစာမှာ ခေါင်းမီးတောက်ပါတယ်<br/>
+HTML ကဒါကိုသိပါတယ် လွယ်အောင်လုပ်ပေးထားပါတယ်<br/>
+ကိုယ့် save ထားတဲ့ .html ဖိုင်ကနေစတွက်ပါတယ် start point အနေနဲ့ ./ ကိုသုံးပါတယ်<br/>
+ကိုယ့်ဖိုင်နဲ့အတူတူထားထားတဲ့ ဖိုင်ကို link မယ်ဆို ./ မထည့်ပဲ file name နဲ့ extension ကိုရေးတာနဲ့ရပါတယ်<br/>
+same location ဆိုမလိုပါ။ ကိုယ့် project ထည်းမှာ src ဆိုတဲ့ Folder ထည်းမှာဖိုင်တွေထည့်ထားတယ်ဆိုပါဆို့<br/>
+project folder ထည့်မာ ကိုယ့်.html ဖိုင်ရယ် src folder ရယ်ရှိနေတယ်ပေါ့ <br/>
+src ထည့်မှာ နောက်ထက် htmlဖိုင်တွေထည့်ထားမယ် နာမည်က page2.html ဆိုပါဆို့<br/>
+ဒီလိုလေးချိတ်ရပါမယ် <br/>
+href="./src/page2.html"<br/>
+start point ./ လိုလာပါပြီနော်<br/>
+file က project folder အပြင်မာဆိုဘလိုလုပ်မတုန်း? ../ ကိုသုံးပြီး path ကိုထွက်ထွက်သွားလို့ရပါတယ်<br/>
+../../../ စသဖြင့် ပေါ့။ ../တစ်ခါဆို path တစ်ခုစာ ထွက်သွားမာပါ။../../ ဆို (၂)ခုစာထွက်သွားမှာပါ<br/>
+folder ၂ ခုစာပေါ့ဗျာ<br/>
+email ချိတ်မယ် သူကတမျိုးလေးပါ။ click တာနဲ့ email app တစ်ခုခုနဲ့ auto compose ဖြစ်နေမှာပါ<br/>
+attribute value မှာ mailto:ဆိုတာလေးထည့်ပေးရမှာပါ<br/>
+&lt;a href="mailto:youremail@mail.com">Email me&lr;/a><br/>
+youremail@mail.com နေရာမှာ ကိုယ်ထည့်ချင်တဲ့ mail address ထည့်ပါ<br/>
+<a href="mailto:youremail@mail.com">Email me</a><br/>
+phone ချိတ်မယ်၊ click တာနဲ့ phone app ထည့် တန်းရောက် မိုက်တယ်နော်<br/>
+ဒါလေးသုံး href="tel:yournumber" yournumber နေရာမှာ ခေါ်စေချင်တဲ့ telephone no. ထည့်ပါ<br/>
+&lt;a href="tel:09000000001">Call me&lt;/a><br/>
+
+<a href="tel:09000000001">Call me</a><br/>
+နှိပ်လိုက်တာနဲ့ phone app မှာ 09000000001 က ပေါ်နေမှာပါ
+</p>
 </body>
 </html>
