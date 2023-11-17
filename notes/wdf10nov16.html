@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WDF-10(16.11.2023) Class Notes</title>
+	<link rel="stylesheet" href="./../css/snippet.css">
+</head>
+<body>
+	<h3>Notes for (16.11.2023) Class </h3>
+	<p>table ကို border လေးနဲ့ပြချင်ရင် table tag မှာ border="" attribute ကိုသုံးပါ
+		column ပေါင်းချင်ရင် th or td tag မှာ colspan="" attribute သုံးပါ။
+		row ပေါင်းချင်ရင် rowspan="" attribute သုံးပါ။
+		<br/><i>မှတ်ချက်။ row များသည်အောက်ကိုသာပေါင်းသွားမှာဖြစ်ပါတယ်</i><br/>
+		table တွေကို section လေးတွေခွဲပြီးသတ်မှတ်ချင်ရင်တော့ tag လေးတွေရှိပါတယ်။ team နဲ့အလုပ်လုပ်တဲ့အခါ
+		တခြားသူအတွက်လည်းအဆင်ပြေ ကိုပြန်ပြင်စရာရှိရင်လည်းလွယ်ကူအောင်ပါ။ စနစ်လည်းကျပါတယ်။<br/>
+		for table header - <b>theader</b><br/>
+		for table body - <b>tbody</b><br/>
+		for table footer - <b>tfoot</b>
+	</p>
+	<h4>Codes</h4>
+<pre>
+	<code>
+&lt;table border="1">
+	&lt;thead>
+		&lt;tr>
+			&lt;th colspan="6">ABC co.,ltd&lt;/th>
+		&lt;/tr>
+		&lt;tr>
+			&lt;th>No&lt;/th>
+			&lt;th>Item&lt;/th>
+			&lt;th>Qty&lt;/th>
+			&lt;th>Unit&lt;/th>
+			&lt;th>Total&lt;/th>
+			&lt;th>QC&lt;/th>
+		&lt;/tr>
+	&lt;/thead>
+	&lt;tbody>
+		&lt;tr>
+			&lt;td>1&lt;/td>
+			&lt;td>Coffee&lt;/td>
+			&lt;td>1&lt;/td>
+			&lt;td>pk&lt;/td>
+			&lt;td>1000&lt;/td>
+			&lt;td rowspan="2">passed&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>2&lt;/td>
+			&lt;td>Sugar&lt;/td>
+			&lt;td>1&lt;/td>
+			&lt;td>pk&lt;/td>
+			&lt;td>500&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>3&lt;/td>
+			&lt;td>Hot Water&lt;/td>
+			&lt;td>1&lt;/td>
+			&lt;td>cup&lt;/td>
+			&lt;td>200&lt;/td>
+			&lt;td rowspan="2">Not Yet&lt;/td>
+		&lt;tr>
+			&lt;td>4&lt;/td>
+			&lt;td>Spoon&lt;/td>
+			&lt;td>1&lt;/td>
+			&lt;td>nos&lt;/td>
+			&lt;td>300&lt;/td>	
+		&lt;/tr>
+	&lt;/tbody>
+	&lt;tfoot>
+		&lt;tr>
+			&lt;td colspan="4">Grand Total&lt;/td>
+			&lt;td>2000&lt;/td>
+			&lt;td>paid&lt;/td>
+		&lt;/tr>
+	&lt;/tfoot>
+&lt;/table>
+	</code>
+</pre>
+
+<h4>Results</h4>
+<table border="1">
+	<thead>
+		<tr>
+			<th colspan="6">ABC co.,ltd</th>
+		</tr>
+		<tr>
+			<th>No</th>
+			<th>Item</th>
+			<th>Qty</th>
+			<th>Unit</th>
+			<th>Total</th>
+			<th>QC</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Coffee</td>
+			<td>1</td>
+			<td>pk</td>
+			<td>1000</td>
+			<td rowspan="2">passed</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Sugar</td>
+			<td>1</td>
+			<td>pk</td>
+			<td>500</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Hot Water</td>
+			<td>1</td>
+			<td>cup</td>
+			<td>200</td>
+			<td rowspan="2">Not Yet</td>
+		<tr>
+			<td>4</td>
+			<td>Spoon</td>
+			<td>1</td>
+			<td>nos</td>
+			<td>300</td>	
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="4">Grand Total</td>
+			<td>2000</td>
+			<td>paid</td>
+		</tr>
+	</tfoot>
+</table>
+<hr/>
+<h3>Division Tag များနှင့် Web-Page တစ်ခုအား ခွဲခြမ်းစိတ်ဖြာခြင်း</h3>
+	<p>
+		Division tag &lt;div> &lt;/div>များကို section များပိုင်းခြားရန်အသုံးပြုပါတယ်။
+		Web-Pageတစ်ခုအား develpnment ပြုလုပ်ရာတွင်
+	</p>
+	<ul>
+		<li>header</li>
+		<li>section</li>
+		<li>footer</li>
+	</ul>
+	<p>
+		စသဖြင့် ပိုင်းခြား၍ ရေးမည်ဆိုပါက division များကိုစီမံခန့်ခွဲရာမှာပိုမိုလွယ်ကူမှာဖြစ်ပါတယ်။ Div tag များကိုသက်ဆိုင်ရာ 
+		အပိုင်းတစ်ပိုင်းစီတွင် ထည့်သွင်းခြင်းဖြင့် စနစ်ကျကာ ရှင်းလင်းလာမည်ဖြစ်ပါသည်။
+	</p>
+<h4>Example</h4>
+<pre><code>
+&lt;!-- start header -->
+&lt;header>
+	&lt;!-- start navbar -->
+	&lt;div>
+
+	&lt;/div>
+	&lt;!-- end navbar -->
+	&lt;!-- start Login & Register -->
+	&lt;div>
+
+	&lt;/div>	
+	&lt;!-- start Login & Register -->
+&lt;/header>
+&lt;!-- end header -->
+&lt;!-- start contant -->
+&lt;section>
+	&lt;!-- start explore -->
+	&lt;div>
+
+	&lt;/div>
+	&lt;!-- end explore -->
+	&lt;!-- start job -->
+	&lt;div>
+
+	&lt;/div>
+	&lt;!-- end job -->
+&lt;/section>
+&lt;!-- end contant -->
+&lt;!-- start footer -->
+&lt;footer>
+	&lt;!-- start menu link -->
+	&lt;div>
+
+	&lt;/div>
+	&lt;!-- end menu link -->
+	&lt;!-- start copyright -->
+	&lt;div>
+
+	&lt;/div>
+	&lt;!-- end copyright -->
+&lt;/footer>
+&lt;!-- end footer -->
+</code></pre>
+<script src="./../js/snippet.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
