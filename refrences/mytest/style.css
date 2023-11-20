@@ -1,0 +1,17 @@
+body{
+	background-image:url("bg.png");
+}
+h3{
+	font-family:fantasy;
+	color:purple;
+}
+p {
+	font-family:cursive;
+	font-size:20px;
+	color:dark;
+	border-radius:10px;
+	border:2px solid black;
+	width:device-width;
+	text-align:justify;
+	background:cyan;
+}
