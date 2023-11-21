@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Class Notes Frame</title>
+	<!-- link code snippet css -->
+	<link rel="stylesheet" href="./../css/snippet.css">
+</head>
+<body>
+
+<!-- start header section -->
+<header>
+	<h2>WDF-10 Class Notes</h2>
+	<h3>Notes (for 20.11.2023) Class</h3>
+</header>
+<!-- end header section -->
+
+<!-- start note section -->
+<section>
+	<!-- start paragraph -->
+	<div>
+		<h3>Anchor Link</h3>
+		<p style="text-align: justify;">	အတွင်းမှစာသားများကိုတော့ lorem ipsum site ကနေ copy ယူပါ။
+			များနိုင်သလောက်များအောင် copy ပွားပါ။ဆရာက ဆယ်ခါ ပွားခိုင်းပါတယ်။ပြီးရင်စာပိုဒ်ကို ငါးခါ ထပ်ပွားပါ။
+			&lt;p> tag များကို &lt;div> တစ်ခုစီ အောက်တွင် ခွဲ၍ ထည့်ထားဖို့အရေးကြီးပါတယ်။
+			ပြီးရင်တော့ div tag မှာ id="" ဆိုတဲ့ attribute ကိုသုံးပြီး id လေးတွေသတ်မှတ်ပေးပါ။
+			id ဟာ unique ဖြစ်ရပါမယ်။ id တွေဟာတူနေလို့မရသလို ကိုယ်လွယ်လွယ်ခေါ်သုံးနိုင် မှတ်မိနိုင်မယ့် 
+			id မျိုးသတ်မှတ်ပေးရပါမယ်။ custom value မို့ ကိုယ်ဘာထားထားရသလို ထားထားတဲ့အတိုင်း ခေါ်သုံးရမှာပါ။
+			id ရဲ့ value ကို anchor tag မှာ link လုပ်မှာပါ။ ဒါဆို anchor လုပ်ထားတဲ့ hyper link ကို click လုပ်
+			လုပ်တဲ့အခါ ချိတ်ထားတဲ့ id value ရှိတဲ့ div ကိုခေါ်သွားပေးမှာပါ။ html မှာ id ကို ခေါ်သုံးချင်ရင် # ခံပြီးသုံးပါတယ်။ 
+			အောက်မှာ code လေးတွေကြည့်ကြည့်ပါ။ result တော့မပြတော့ပါဘူး။ ကိုယ့်ဘာသာ try ကြည့်ပါ။
+		</p>
+	</div>
+	<!-- end paragraph -->
+
+	<!-- start code snippet -->
+	<div>
+		<h3>Codes</h3>
+		<pre><code>
+&lt;h3>Anchor Link&lt;/h3>
+&lt;div>
+	&lt;a href="#p1">Paragraph 1&lt;/a>
+	&lt;a href="#p2">Paragraph 2&lt;/a>
+	&lt;a href="#p3">Paragraph 3&lt;/a>
+	&lt;a href="#p4">Paragraph 4&lt;/a>
+	&lt;a href="#p5">Paragraph 5&lt;/a>
+&lt;/div>
+					
+&lt;div id="p1">
+	&lt;h1>Paragraph 1&lt;/h1>
+	&lt;p>
+	paste lorem ipsum paragraph 10 times
+	&lt;/p>
+&lt;/div>
+					
+&lt;div id="p2">
+	&lt;h1>Paragraph 2&lt;/h1>
+	&lt;p>
+	paste lorem ipsum paragraph 10 times
+	&lt;/p>
+&lt;/div>
+					
+&lt;div id="p3">
+	&lt;h1>Paragraph 3&lt;/h1>
+	&lt;p>
+	paste lorem ipsum paragraph 10 times
+	&lt;/p>
+&lt;/div>
+					
+&lt;div id="p4">
+	&lt;h1>Paragraph 4&lt;/h1>
+	&lt;p>
+	paste lorem ipsum paragraph 10 times
+	&lt;/p>
+&lt;/div>
+					
+&lt;div id="p5">
+	&lt;h1>Paragraph 5&lt;/h1>
+	&lt;p>
+	paste lorem ipsum paragraph 10 times
+	&lt;/p>
+&lt;/div>
+	</code></pre>
+</div>
+	<!-- end code snippet -->
+
+	<!-- start paragraph -->
+	<div>
+		<h3>Form Elements (Block Elements)</h3>
+		<p style="text-align: justify;">	
+			Form elements အတွက် tag ကတော့ &lt;form> &lt;/form>ပါ။ 
+			form တစ်ခု တည်ဆောက်ဖို့အတွက် သတ်မှတ်လိုက်တဲ့သဘောပါပဲ။ သူ့ထည်းမှာ tag တွေရှိပါသေးတယ်။
+			label အတွက် &lt;label> &lt;/label> (inline element)
+			user input အတွက် &lt;input/> (inline elements)
+		</p>
+	</div>
+
+	<div>
+		<pre><code>
+<form>
+	&lt;label>First Name&lt;/label>
+	&lt;input />
+</form>
+		</code></pre>
+		<h3>result</h3>
+		<form>
+			<label>First Name</label>
+			<input />
+		</form>
+		<p style="text-align: justify;">
+			အထက်ကပုံအတိုင်း ရေးရပါတယ်။ layout ပုံစံပါ။ user friendly ဖြစ်အောင် attribute တွေရှိပါသေးတယ်။
+			label tag မှာ lable click တာနဲ့ auto culer ကျ နေအောင် for ဆိုတဲ့ attribute နဲ့ input tag ရဲ့ id နဲ့ချိတ်ရပါတယ်။
+			input tag မှာလည်း id attribute သုံးရမယ်ပေါ့။ id က ဒီထက်ပိုသုံးနိုင်ပါသေးတယ်။ CSS နဲ့ design ဆွဲချင်တဲ့အခါ (သို့) JavaScript ကတစ်ဆင့်
+			data base နဲ့ချိတ်ဆက်တဲ့အခါ တွေမှာသုံးပါသေးတယ်။ အောက်မှာ attributeအချို့ကိုဖော်ပြပေးပါမယ်။
+		</p>
+		<h3>attribute for label tag</h3>
+		<ul>
+			<li>for="" (to bind the related element)</li>
+		</ul>
+		<h3>attribute for input tag</h3>
+		<ol>
+			<li>type="" (types for user input)
+				<h4>values</h4>
+				<ul>
+					<li>text</li>
+					<li>number</li>
+					<li>password</li>
+					<li>radio</li>
+					<li>checkbox</li>
+				</ul>
+			</li>
+			<li>name="" (to indicate database for backend PHP user)</li>
+			<li>id="" (specifies a unique id )</li>
+			<li>class="" (specifies one or more classnames for an element)</li>
+			<li>value="" (user input value)</li>
+			<li>placeholder="" (specifies a short hint to input field</li>
+		</ol>
+	</div>
+	<!-- end paragraph -->
+	<!-- start code  -->
+	<div>
+		<h3>Codes</h3>
+		<pre><code>
+&lt;h3>Form Elements&lt;/h3>
+&lt;form>
+	&lt;label for="firstname">First Name&lt;/label>
+	&lt;input type="text" name="firstname" id="firstname" class="" placeholder="enter your first name" />
+	&lt;br/>&lt;br/>
+		
+	&lt;label for="lastname">Last Name&lt;/label>
+	&lt;input type="text" name="lastname" id="lastname" class="" placeholder="enter your last name" />
+	&lt;br/>&lt;br/>
+		
+	&lt;label for="age">Age&lt;/label>
+	&lt;input type="number" name="age" id="age" class="" placeholder="enter your age" />
+	&lt;br/>&lt;br/>
+		
+	&lt;label for="password">Password&lt;/label>
+	&lt;input type="password" name="password" id="password" class="" placeholder="enter your password" />
+	&lt;br/>&lt;br/>
+				
+	&lt;label >Gender&lt;/label>
+	&lt;input type="radio" name="gender" id="genderm" class="" value="1" />&lt;label for="genderm">Male&lt;/label>
+	&lt;input type="radio" name="gender" id="genderf" class="" value="0" />&lt;label for="genderf">Female&lt;/label>
+	&lt;input type="radio" name="gender" id="gendero" class="" value="2" />&lt;label for="gendero">Other&lt;/label>
+	&lt;br/>&lt;br/>
+				
+	&lt;label >Fruit&lt;/label>
+	&lt;input type="radio" name="fruit" id="fruitap" class="" value="1" />&lt;label for="fruitap">Apple&lt;/label>
+	&lt;input type="radio" name="fruit" id="fruitor" class="" value="2" />&lt;label for="fruitor">Orange&lt;/label>
+	&lt;input type="radio" name="fruit" id="fruitpapp" class="" value="3" />&lt;label for="fruitpapp">Pineapple&lt;/label>
+	&lt;br/>&lt;br/>
+				
+	&lt;label >Fruit&lt;/label>
+	&lt;input type="checkbox" name="favcolor" id="favrd" class="" value="1" />&lt;label for="favrd">Red&lt;/label>
+	&lt;input type="checkbox" name="favcolor" id="favgr" class="" value="2" />&lt;label for="favgr">Green&lt;/label>
+	&lt;input type="checkbox" name="favcolor" id="favbl" class="" value="3" />&lt;label for="favbl">blue&lt;/label>
+	&lt;input type="checkbox" name="favcolor" id="favwh" class="" value="3" />&lt;label for="favwh">White&lt;/label>
+&lt;/form>
+		</code></pre>
+	</div>
+	<!-- end code -->
+	<!-- start result -->
+	<h3>Results</h3>
+	<h3>Form Elements</h3>
+	<form>
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="" placeholder="enter your first name" />
+		<br/><br/>
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="" placeholder="enter your last name" />
+		<br/><br/>
+
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" class="" placeholder="enter your age" />
+		<br/><br/>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" class="" placeholder="enter your password" />
+		<br/><br/>
+		
+		<label >Gender</label>
+		<input type="radio" name="gender" id="genderm" class="" value="1" /><label for="genderm">Male</label>
+		<input type="radio" name="gender" id="genderf" class="" value="0" /><label for="genderf">Female</label>
+		<input type="radio" name="gender" id="gendero" class="" value="2" /><label for="gendero">Other</label>
+		<br/><br/>
+		
+		<label >Fruit</label>
+		<input type="radio" name="fruit" id="fruitap" class="" value="1" /><label for="fruitap">Apple</label>
+		<input type="radio" name="fruit" id="fruitor" class="" value="2" /><label for="fruitor">Orange</label>
+		<input type="radio" name="fruit" id="fruitpapp" class="" value="3" /><label for="fruitpapp">Pineapple</label>
+		<br/><br/>
+		
+		<label >Fruit</label>
+		<input type="checkbox" name="favcolor" id="favrd" class="" value="1" /><label for="favrd">Red</label>
+		<input type="checkbox" name="favcolor" id="favgr" class="" value="2" /><label for="favgr">Green</label>
+		<input type="checkbox" name="favcolor" id="favbl" class="" value="3" /><label for="favbl">blue</label>
+		<input type="checkbox" name="favcolor" id="favwh" class="" value="3" /><label for="favwh">White</label>
+	</form>
+	<!-- end result -->
+</section>
+<!-- end note section -->
+
+<!-- start footer section -->
+<footer>
+<small>&copy;Arkar Hein</small>
+<a href="mailto:arkarhein.me@gmail.com">&#9993;</a>
+<a href="tel:09775931603">&phone;</a>
+</footer>
+<!-- end footer section -->
+<!-- link code snippet js -->
+<script src="./../js/snippet.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
