@@ -1,0 +1,29 @@
+.textalign{
+/*	text-align:left;*/
+/*	text-align:right;*/
+/*	text-align:center; */
+	text-align:justify;
+}
+.textdecoration{
+/*	text-decoration:underline;*/
+/*	text-decoration:overline; */
+	text-decoration:line-through;
+}
+a{
+	text-decoration: none;
+}
+.textline{
+/*	letter-spacing:1px;*/
+
+/*	line-height:30px;*/
+/*	line-height:3;*/
+	line-height:300%;
+}
+.textshadow{
+/*	h v b c */
+/*	hoz vtl blur color*/
+/*	text-shadow:50px 0 3px red;*/
+/*	text-shadow:-50px 0 3px blue;*/
+	
+	text-shadow: 0 -5px 3px blue;
+}

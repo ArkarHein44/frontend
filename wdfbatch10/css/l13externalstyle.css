@@ -1,0 +1,29 @@
+/*Element selectors*/
+/*single selector*/
+div{
+	justify-content: center;
+}
+h2{
+	color:blue;
+}
+/*group selectpr*/
+h3,h4,h5{
+	color:steelblue;
+	font-size:30px;
+}
+/*ID selector*/
+/*single selector*/
+#myself{
+	color: violet;
+}
+/*Group selector*/
+#thd,#ygn,i{
+	color: blue;
+}
+/*class selector*/
+.phone{
+	color: green;
+}
+.fontlg,u{
+	font-size:30px;
+}
