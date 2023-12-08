@@ -1,0 +1,94 @@
+/*Font Integrate
+(i) Local Mechine Integration
+(ii) Global Integration or Project Folder Integration*/
+
+/*	at rules
+	@indentifier rule()	*/
+/*@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+@import url('l17addfile.css');
+/*Universal Selector*/
+*{
+	cursor: pointer;
+}
+/*	(i) Local Integration*/
+/**{
+	font-family: Arial;
+}*/
+
+/*.p1{
+	font-family: Arial;
+}
+.p2{
+	font-family: "Time New Roman";
+}
+.p3{
+	font-family: Century,Arial,"Time New Roman";
+}*/
+	
+/*	(ii) Global Integration*/
+@font-face{
+	font-family: apple;
+	src:url(./../fonts/fa-solid-900.ttf);
+}
+@font-face{
+	font-family:"stick";
+	src:local(Stick-Regular),url('./../fonts/Stick-Regular.ttf'),format('woff');
+}
+.p1,.p4{
+	font-family: 'stick', sans-serif;
+}
+.p2{
+	font-family: "Akaya Telivigala";
+/*	!important means not overwrite, if 2 or more !important follows waterflow*/
+	color: green !important;
+}
+.p5{
+	font-family: apple;
+	font-size:20px;
+}
+.clickme{
+	text-decoration: none;
+	color: yellow;
+}
+/*	Pseudo class (:)*/
+.clickme:hover{
+	text-decoration: underline;
+	color: green;
+	font-size: 30px;
+}
+.clickme:visited{
+	color:red;
+}
+.menutext{
+	font-family: Arial;
+	text-decoration: underline;
+	background-color: green;
+	color: #fff;
+/*	padding: top-bottom left-right;*/
+/*	padding: 10px 20p;*/
+/*	padding: top right bottom left;*/
+/*	padding: 10px 20px 30px 40px;*/
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+/*	transition: all 1s;*/
+	transition: background-color 2s, color 5s;
+}
+.menutext:hover{
+	background-color: orange;
+	color: #000;
+}
+.imgdesign{
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+
+	transition: all 1s;
+}
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}

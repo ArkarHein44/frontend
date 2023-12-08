@@ -25,5 +25,8 @@ a{
 /*	text-shadow:50px 0 3px red;*/
 /*	text-shadow:-50px 0 3px blue;*/
 	
-	text-shadow: 0 -5px 3px blue;
+/*	text-shadow: 0 -5px 3px blue;*/
+/*	text-shadow:-5px -5px 5px #eb9e34;*/
+/*	text-shadow: -5px -5px 5px rgba(142, 98, 207, 0.54);*/
+	text-shadow:5px 0 5px red,-5px 0 5px green,0 5px 5px blue, 0 -5px 5px yellow;
 }
