@@ -82,12 +82,6 @@ footer {
   text-decoration: none;
   margin-left: 10px;
 }
-.month{
- font-size: 1.5em;
-}
-/*.nov,.dec,.jan{
-  background-color: gray;
-}*/
 
 /* Responsive styling */
 @media (max-width: 600px) {

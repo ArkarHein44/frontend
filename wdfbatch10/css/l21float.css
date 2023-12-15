@@ -1,0 +1,42 @@
+/*Variable var()*/
+/*custom property (:root{--x:x;})*/
+
+:root{
+	--or:orange;
+	--rc:red;
+	--gn:#2ab54c;
+	--sil: rgba(189, 189, 189);
+	--au: rgb(255,215,0);
+}
+
+.div1{
+	--wd:100px;
+	width: 100px;
+	height: var(--wd);
+	background-color: var(--or);
+	float:left;
+}
+.div2{
+	width: 200px;
+	height: 200px;
+	background-color: var(--rc);
+	float:left;
+}
+.div3{
+	width: 300px;
+	height: 300px;
+	background-color: var(--gn);
+	float:left;
+}
+.div4{
+	width: 400px;
+	height: 400px;
+	background-color: var(--sil);
+	float:left;
+}
+.div5{
+	width: 500px;
+	height: 500px;
+	background-color: var(--au);
+	float:left;
+}

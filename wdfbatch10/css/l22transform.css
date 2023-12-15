@@ -1,0 +1,53 @@
+:root{
+	--or:orange;
+	--gn:green;
+	--rc:red;
+}
+
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color: var(--or);
+	transform: rotate(45deg);
+}
+
+.div2{
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+	transform: rotate(1turn);
+}
+/*1turn = 360deg*/
+
+.div3{
+	width: 100px;
+	height: 80px;
+	background-color: var(--rc);
+	transform: rotateX(45deg);
+}
+
+.div4{
+	width: 100px;
+	height: 80px;
+	background-color: var(--rc);
+	transform: rotateY(-45deg);
+}
+
+/*scale(xy)*/
+/*default(1)*/
+
+.div5{
+	width: 100px;
+	height: 80px;
+	background-color: var(--or);
+	transform: scale(0.7);
+}
+
+/*skew(deg)*/
+.div6{
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+	transform: skew(20deg);
+/*	transform: skew(-20deg);*/
+}
