@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WDF-10 (18.12.2023) Class Notes</title>
+	<!-- link code snippet css -->
+	<link rel="stylesheet" href="./../css/snippet.css">
+	<style>
+		.circle1,.circle2,.circle3,.circle4,.circle5{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.circle1{
+	background: conic-gradient(yellow,red,green,pink);
+}
+.circle2{
+	background: conic-gradient(
+		#4287f5,
+		#9d0cad,
+		#163b80,
+		#bf2506);
+}
+.circle3{
+	background: conic-gradient(rgba(245,40,145,0.5),rgba(245,40,55,0.8),rgba(245,40,146,0.8));
+}
+.circle4{
+	background: conic-gradient(
+		hsla(308, 100%, 50%, 1),
+		hsla(16, 100%, 50%, 1),
+		hsla(252, 100%, 71%, 0.68));
+}
+.circle5{
+	background:conic-gradient(
+	red 40%,
+	yellow 0% 50%,
+	blue 0% 80%,
+	green 0% 100%);
+}
+.circle6{
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(
+		red 20%,
+		yellow 0% 30%,
+		blue 0% 50%,
+		green 0% 100%
+	);
+}
+	</style>
+</head>
+<body>
+<!-- start header section -->
+<header>
+	<h2>WDF-10 Class Notes</h2>
+	<p>Special Thank to Sayar Tin Htut Aung(Data Land Technology)</p>
+</header>
+<!-- end header section -->
+
+<!-- start note section -->
+<section>
+	<h3> Notes for (18.12.2023) Class</h3>
+	<p>transform: translate() defalse is on X axis.Same as translateX and translateY for Y axis.</p>
+<p>Codes</p>
+<pre>
+<code>
+&lt;div>
+&lt;div class="div7" style="
+width: 200px;
+height: 200px;
+background: orange;
+transform:translate(100px);
+
+/*translate:translate(-100px)
+transform:translate(50%);
+transform:translateX(100px);
+transform:translateY(100px)*/
+
+">DIV Seven&lt;/div>
+&lt;/div>
+&lt;hr/>
+</code>
+</pre>
+	<p>result</p>
+	<div>
+		<div class="div7" style="
+		width: 200px;
+		height: 200px;
+		background: orange;
+		transform:translate(100px);
+		">DIV Seven</div>
+	</div>
+	<hr/>
+<p>X ဝင်ရိုးနဲ့ Y ဝင်ရိုးအတွက် တစ်ခါတည်းရေးချင်ရင်  parameter အနေနဲံ translate( , )သုံးလို့ရသလို။ translateX() translateY() အနေနဲ့လည်းခွဲရေးလို့ရပါတယ်</p>
+<p>Codes</p>
+<pre>
+<code>
+div>
+&lt;div class="div8" style="
+width:200px;
+height:200px;
+background-color: green;
+/*	translate(x,y)*/
+/*	transform: translate(50%, 50%);*/
+/*	transform: translate(-50%,50%);*/
+/*	transform: translate(50%,-50%);*/
+transform: translateX(-50%) translateY(-50px);">
+DIV Eight&lt;/div>
+&lt;/div>
+&lt;hr/>
+</code>
+</pre>
+<p>Result</p>
+<div>
+	<div class="div8" style="
+	width:200px;
+	height:200px;
+	background-color: green;
+/*	translate(x,y)*/
+/*	transform: translate(50%, 50%);*/
+/*	transform: translate(-50%,50%);*/
+/*	transform: translate(50%,-50%);*/
+	transform: translateX(-50%) translateY(-50px);">
+	DIV Eight</div>
+	</div>
+<hr/>
+<p>media at rule(@media) for responsive styling</p>
+<div>
+<p>code</p>
+<pre>
+<code>
+h1{
+	text-align: center;
+	color: green;
+}
+p.text{
+	text-align: justify;
+	color: steelblue;
+}
+@media(max-width:600px){
+	h1{
+	text-align: center;
+	color: steelblue;
+}
+p.text{
+	text-align: justify;
+	color: green;
+	font-size: 20px;
+}
+}
+</code>
+</pre>
+</div>
+<p>အပေါ်က h1 နဲ့ p.text ရဲ့ style တွေဟာ width: 600px; အောက်ရောက်သွားတဲ့အခါ @media()ရဲ့ style တွေကအလုပ်လုပ်မှာပါ</p>
+<hr/>
+<h3>conic-gradient</h3>
+<p>ခမောက်ပုံစံ အရောင်ပြေးဖန်တီးခြင်း။ conic-gradient property ကိုသုံး</p>
+<p>conic-gradient ကို degree လှည့်လို့မရပါ</p>
+<p>အရောင်ကိုမရောစေချင်ရင်ပြတ်သားစေချင်ရင် color value နောက်မှာ % ဖြင့်ထည့်ပါ။ red 40% ဆို အနီက 40%စာနေရာယူမှာပါ။ ဒါကိုသူ့အောက်က အရောင်မှာ yellow 0% 50% လို့ရေးလို့ရပါသေးတယ်။ ရှေ့က % က ရှေ့ကအရောင်နဲ့ ရောစပ်မယ့်ရာခိုင်နှုန်းပါ။ 0%ဆိုတာကမရောစပ်ဖူးလို့ဆိုတာပါ။ linear-gradientမှာလည်းအတူတူပါပဲ သူကတော့ degree လှည့်လို့ရပါတယ်</p>
+<p>code</p>
+<pre>
+<code>
+HTML code
+&lt;div>
+	&lt;div class="circle1">&lt;/div>
+	&lt;hr/>
+	&lt;div class="circle2">&lt;/div>
+	&lt;hr/>
+	&lt;div class="circle3">&lt;/div>
+	&lt;hr/>
+	&lt;div class="circle4">&lt;/div>
+	&lt;hr/>
+	&lt;div class="circle5">&lt;/div>
+	&lt;hr/>
+&lt;/div>
+
+CSS code
+.circle1,.circle2,.circle3,.circle4,.circle5{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.circle1{
+	background: conic-gradient(yellow,red,green,pink);
+}
+.circle2{
+	background: conic-gradient(
+		#4287f5,
+		#9d0cad,
+		#163b80,
+		#bf2506);
+}
+.circle3{
+	background: conic-gradient(rgba(245,40,145,0.5),rgba(245,40,55,0.8),rgba(245,40,146,0.8));
+}
+.circle4{
+	background: conic-gradient(
+		hsla(308, 100%, 50%, 1),
+		hsla(16, 100%, 50%, 1),
+		hsla(252, 100%, 71%, 0.68));
+}
+.circle5{
+	background:conic-gradient(
+	red 40%,
+	yellow 0% 50%,
+	blue 0% 80%,
+	green 0% 100%);
+}
+.circle6{
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(
+		red 20%,
+		yellow 0% 30%,
+		blue 0% 50%,
+		green 0% 100%);
+}
+</code>
+</pre>
+<p>result</p>
+<div>
+	<div class="circle1"></div>
+	<hr/>
+	<div class="circle2"></div>
+	<hr/>
+	<div class="circle3"></div>
+	<hr/>
+	<div class="circle4"></div>
+	<hr/>
+	<div class="circle5"></div>
+	<hr/>
+	<div class="circle6"></div>
+	<hr/>
+</div>
+
+
+</section>
+<!-- end note section -->
+
+<!-- start footer section -->
+<footer>
+<small>&copy;Arkar Hein</small>
+<a href="mailto:arkarhein.me@gmail.com">&#9993;</a>
+<a href="tel:09775931603">&phone;</a>
+</footer>
+<!-- end footer section -->
+
+<!-- link code snippet js -->
+<script src="./../js/snippet.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

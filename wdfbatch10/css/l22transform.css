@@ -51,3 +51,45 @@
 	transform: skew(20deg);
 /*	transform: skew(-20deg);*/
 }
+
+/*translate() only work on x axis*/
+.div7{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+/*	transform: translate(100px);*/
+/*	transform: translate(50%);*/
+/*	transform: translate(-100px);*/
+/*	transform: translateX(100px);*/
+	trabsform: translateY(-100px);
+}
+
+.div8{
+	width:200px;
+	height:200px;
+	background-color: var(--gn);
+/*	translate(x,y)*/
+/*	transform: translate(50%, 50%);*/
+/*	transform: translate(-50%,50%);*/
+/*	transform: translate(50%,-50%);*/
+	transform: translateX(-50%) translateY(-50px);	
+}
+h1{
+	text-align: center;
+	color: green;
+}
+p.text{
+	text-align: justify;
+	color: steelblue;
+}
+@media(max-width:600px){
+	h1{
+	text-align: center;
+	color: steelblue;
+}
+p.text{
+	text-align: justify;
+	color: green;
+	font-size: 20px;
+}
+}
