@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #bccad6; 
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #667292; 
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+}
+
+
+/* Style for Content Captions */
+p {
+    margin-bottom: 15px;
+}
+
+/* Style for Code Snippets */
+code {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1; /* Light gray background for code */
+    color: #333; /* Dark text color for code */
+    overflow-x: auto;
+}
+
+/* Style for Results Section */
+/* Add your specific styling for the results section here */
+
+/* Style for Footer Section */
+footer {
+    background-color: #8d9db6; 
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for Links in Footer */
+footer a {
+    color: #fff; /* White text color for links in footer */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hover effect for links in Footer */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    section {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+}

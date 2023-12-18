@@ -5,6 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale-1"/>
 	<title>Notes for (21.11.2023)Class</title>
 	<link rel="stylesheet" href="./../css/snippet.css"/>
+	<style>
+		 .result{
+			border: 1px solid black;
+		}
+			header{
+				text-align: center;
+				background: gray;
+				color: White;
+			}
+			footer{
+				text-align: center;
+				background: gray;
+				color: White;
+			}
+
+	</style>
 	</head>
 	<body>
 	<!--start header-->
@@ -16,6 +32,227 @@
 	
 	<!-- start content -->
 	<section>
+		<p>select option</p>
+		<p>ရွေးချယ်စေချင်တာတွေအများကြီးရှိလာတဲ့အခါ selection> option ကိုသုံး</p>
+		<div class="code"><p>Codes</p>
+		<pre>
+			<code>
+&lt;label for="country">citizen&lt;/label>
+&lt;select name="country" id="country" class="">
+&lt;option value="mm">Myanmar&lt;/option>
+&lt;option value="th">Thailand&lt;/option>
+&lt;option value="ph">Philippine&lt;/option>
+&lt;option value="slk">srilinka&lt;/option>
+&lt;/select>
+			</code>	
+		</pre>
+	</div>
+	<div class="result"><p>Result</p>
+		<label for="country">citizen</label>
+		<select name="country" id="country" class="">
+			<option value="mm">Myanmar</option>
+			<option value="th">Thailand</option>
+			<option value="ph">Philippine</option>
+			<option value="slk">srilinka</option>
+		</select>
+	</div>
+<p>ကြိုပီးရွေးထားစေချင်တာရှိရင် selected ဆိုတဲ့ attributeကိုသုံး<br/>
+ရွေးလို့မရစေချင်ရင် disabled ဆိုတဲ့ attribute ကိုသုံး</p>
+<p>attribute မှာ value မလိုတဲ့ attribute တွေကို stand alone attribute လို့ခေါ်ပါတယ်</p>
+<ul>
+	<li>selected</li>
+	<li>disabled</li>
+</ul>
+<p> တို့လို attribute တွေပါ</p>
+<div class="code">
+<pre>
+<code>
+&lt;label for="country">citizen&lt;/label>
+&lt;select name="country" id="country" class="">
+&lt;option selected disabled>choose country&lt;/option>
+&lt;option value="mm">Myanmar&lt;/option>
+&lt;option value="th">Thailand&lt;/option>
+&lt;option value="ph">Philippine&lt;/option>
+&lt;option value="slk">srilinka&lt;/option>
+&lt;/select>
+</code>
+</pre>
+</div>
+<div class="result">
+<p>Result</p>
+<label for="country">citizen</label>
+<select name="country" id="country" class="">
+<option selected disabled>choose country</option>
+<option value="mm">Myanmar</option>
+<option value="th">Thailand</option>
+<option value="ph">Philippine</option>
+<option value="slk">srilinka</option>
+</select>
+</div>
+<p>အခြား stand alone attributeများရှိပါသေးတယ်။ readonly ဆိုတာရှိပါတယ် input box မှာသွားပေးထားမယ်ဆိုရင် culsor ပဲချလို့ရပါမယ်။ ရိုက်ထည့်လို့မရတော့ပါဘူး။ disabled ကိုထည့်ရင်တော့ cursor ပါ ချရမှာမဟုတ်တော့ပါဘူး။ radio button တွေ check box တွေမှာ ကြိုရွေးထားချင်ရင်တော့ selected သုံးလို့မရပါဘူး။ checked ဆိုတဲ့ stand alone attribute ကိုသုံးပါ။ select option မှာ အများကြီးရွေးလို့ရစေချင်ရင် multiple ကိုသုံးပါ။ အများကြီးတစ်ခါတည်းရွေးထားတယ်ဆိုရင်တော့ array ကိုသုံးရပါတယ် php အတွက်ပါ။ backend မှာ database ထည်းကို ထည့်ဖို့ပါ arrayအတွက် [] သုံးပါတယ် javascript မှာလည်းသုံးပါတယ်</p>
+<p>Example</p>
+<div class="code">
+<pre>
+<code>
+&lt;label>disabled&lt;/label>&lt;input disabled />
+&lt;br/>
+&lt;label>readonly&lt;/label>&lt;input readonly/>
+&lt;p> apple checked&lt;/p>
+&lt;input type="radio" checked/>&lt;label for="fruitap">Apple&lt;/label>
+&lt;input type="radio" />&lt;label for="fruitor">Orange&lt;/label>
+&lt;p>you can select multiple&lt;/p>
+&lt;label for="country">citizen&lt;/label>
+&lt;select name="country[]" id="country" class="" multiple>
+&lt;option selected disabled>choose country&lt;/option>
+&lt;option value="mm">Myanmar&lt;/option>
+&lt;option value="th">Thailand&lt;/option>
+&lt;option value="ph">Philippine&lt;/option>
+&lt;option value="slk">srilinka&lt;/option>
+&lt;/select>
+</code>
+</pre>
+</div>
+<div class="result">
+<label>disabled</label><input disabled />
+<br/>
+<label>readonly</label><input readonly/>
+<br/>
+<p> apple checked</p>
+<input type="radio"  checked/><label for="fruitap">Apple</label>
+<input type="radio" /><label for="fruitor">Orange</label>
+<p>you can select multiple</p>
+<label for="country">citizen</label>
+<select name="country[]" id="country" class="" multiple>
+<option selected disabled>choose country</option>
+<option value="mm">Myanmar</option>
+<option value="th">Thailand</option>
+<option value="ph">Philippine</option>
+<option value="slk">srilinka</option>
+</select>
+</div>
+<ul>Other input types</ul>
+<li>date</li>
+<li>time</li>
+<li>datetime-local</li>
+<li>range</li>
+<li>file</li>
+<li>email</li>
+<p>range အတွက် min နဲ့ max ဆိုတဲ့ attribute ကိုသုံးရပါတယ်။ step ဆိုတဲ့ attribute နဲ့ အနည်းဆုံးဘယ်လောက် ထိတိုးလို့ လျော့လို့ရမယ်ဆိုတာကို ချိန်ညှိလို့ရပါတယ်။ file ဆိုတဲ့ attribute ကိုသုံးမယ်ဆို ကိုယ်က ရွေးစေချင်တဲ့ file type ကို accept ဆိုတဲ့ attribute နဲ့ကြိုသတ်မှတ်ပေးထားနိုင်ပါတယ်။ image အတွက် image/* နဲ့ video အတွက် video/* ဆိုတဲ့ value ကိုသုံးနိုင်ပါတယ်။ image နဲ့ video တွေကို mobile device တွေအတွက် camera ကိုခေါ်သုံးနိုင်အောင် capture="user" ဆိုပြီး attribute ထည့်သုံးနိုင်ပါတယ်။ ဒါဆို camera app တွေပွင့်လာမှာပါ။
+input box တွေမှာ အရင်က ဖြည့်ထားတာတွေရှိရင် auto ပြန်ပြန်ပေါ်လာတတ်ပါတယ်။ မပေါ်စေချင်ရင် autocomplete="off" ဆိုတဲ့ attribute ကိုသုံးပါ။ </p>
+<div class="code">
+<p>Codes</p>
+<pre>
+<code>
+&lt;label for="dob">DOB&lt;/label>
+&lt;input type="date" name="dob" id="dob" class=""/>
+&lt;br/>&lt;br/>
+&lt;label for="bookingtime">Booking Time&lt;/label>
+&lt;input type="time" name="bookingtime" id="bookingtime" class="" />
+&lt;br/>&lt;br/>
+&lt;label for="apt">Appointment&lt;/label>
+&lt;input type="datetime-local" name="apt" id="apt" class="" />
+&lt;br/>&lt;br/>
+&lt;label for="volume">Volume&lt;/label>
+&lt;input type="range" name="volume" id="volume" class="" min="0" max="100" value="0" step="10"/>
+&lt;br/>&lt;br/>
+&lt;label for="nrc">NRC&lt;/label>
+&lt;input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user" multiple/>
+&lt;br/>&lt;br/>
+&lt;label for="vdo">Video&lt;/label>
+&lt;input type="file" name="vdo" id="vdo" class="" accept="video/*" capture="environment" multiple/>
+&lt;br/>&lt;br/>
+&lt;label for="email">Email&lt;/label>
+&lt;input type="email" name="email" id="email" class="" placeholder="Enter Your Email Address" autocomplete="off"/>
+</code>
+</pre>
+</div>
+<div class="result">
+	<p>Results</p>
+		<label for="dob">DOB</label>
+		<input type="date" name="dob" id="dob" class=""/>
+		<br/><br/>
+
+		<label for="bookingtime">Booking Time</label>
+		<input type="time" name="bookingtime" id="bookingtime" class="" />
+		<br/><br/>
+
+		<label for="apt">Appointment</label>
+		<input type="datetime-local" name="apt" id="apt" class="" />
+		<br/><br/>
+
+		<label for="volume">Volume</label>
+		<input type="range" name="volume" id="volume" class="" min="0" max="100" value="0" step="10"/>
+		<br/><br/>
+
+		<label for="nrc">NRC</label>
+		<input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user" multiple/>
+		<br/><br/>
+
+		<label for="vdo">Video</label>
+		<input type="file" name="vdo" id="vdo" class="" accept="video/*" capture="environment" multiple/>
+		<br/><br/>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" class="" placeholder="Enter Your Email Address" autocomplete="off"/>
+</div>
+<p>comment box လိုစာတွေအများကြီးရေးလို့ရအောင် textarea ဆိုတဲ့ element ကိုသုံးပါ။ input type မလိုပါဘူး။ သူ့ကို စလာထည်းကစာဘနကြောင်းစာ height ထားမလဲသတ်မှတ်ခြင်ရင် row attribute ကိုသုံးပါ။ spell check ပိတ်ချင်ရင် spellckeck="false"ကိုသုံးပါ</p>
+<div class="code">
+<p>codes</p>
+<pre>
+<code>
+&lt;label for="bio">Bio&lt;/label>
+&lt;textarea  name="bio" id="bio" class="" rows="3" spellcheck="false" placeholder="Enter Your Bio">&lt;/textarea>
+</code>
+</pre>
+</div>
+<div class="result">
+<p>result</p>
+<label for="bio">Bio</label>
+<textarea  name="bio" id="bio" class="" rows="3" spellcheck="false" placeholder="Enter Your Bio"></textarea>
+</div>
+<p>နောက်ထပ် stand alone attribute ရှိပါသေးတယ်။ ကိုယ်ဖျောက်ထားချင်တဲ့ user ကို မပြစေချင်တဲ့အရာတွေကို hidden ဆိုတဲ့ attribute နဲ့ နောက်ကွယ်မာပဲရှိနေအောင် ဖျောက်ထားလို့ရပါတယ်။ input type မှာ hidden ဆိုတဲ့ value ထည့်ထားလည်းရပါတယ်။ type မရှိတဲ့ attribute မရှိတဲ့ element တွေမှာ hidden ကို attribute အနေနဲ့သုံးတာပါ တူတော့တူပါတယ်။ ဒါပေမယ့် အာ့လိုအခြေအနေလေးတွေရှိတာကို သတိချပ်စေချင်တာပါ</p>
+<div class="code">
+<p>code</p>
+<pre>
+<code>
+&lt;input type="text" name="test" id="test" class="" hidden/>
+&lt;input type="hidden" name="test" id="test" class=""/>
+</code>
+</pre>
+</div>
+
+<p>button တွေဖန်တီးကြမယ်။ ၂ နည်းရှိပါတယ် input type နဲ့ button နဲ့ပါ။
+input ရဲ့ type attribute မှာ reset, button, sumit စသဖြင့် value ပေးလိုက်မယ်ဆိုရင် button လေးတေထုတ်ပေးမှာပါ။
+button element ကိုသုံးရင်လည်း button တွေဖန်တီးပေးမှာပါ။reset ကတော့ input တွေအကုန် reset လုပ်မှာပါ။ sumit ကတော့ database ထည်းကို ပို့လိုက်မှာပါ
+</p>
+<div class="code">
+<p>code</p>
+<pre>
+<code>
+&lt;input type="reset" name="reset" id="reset" class=""/>
+&lt;input type="button" name="login" id="login" class="" value="Login"/>
+&lt;input type="submit" name="todb" id="todb" class="" value="Register"/>
+
+&lt;button type="reset" name="cancel" id="cancel" class="">Cancel&lt;/button>
+&lt;button type="button" name="signup" id="signup" class="">Sign Up&lt;/button>
+&lt;button type="submit" name="submit" id="submit" class="">Submit&lt;/button>
+
+</code>
+</pre>
+</div>
+
+<div class="result">
+<p>result</p>
+<p>input element</p>
+<input type="reset" name="reset" id="reset" class=""/>
+<input type="button" name="login" id="login" class="" value="Login"/>
+<input type="submit" name="todb" id="todb" class="" value="Register"/>
+<p>button element</p>
+<button type="reset" name="cancel" id="cancel" class="">Cancel</button>
+<button type="button" name="signup" id="signup" class="">Sign Up</button>
+<button type="submit" name="submit" id="submit" class="">Submit</button>
+</div>
+
 	
 	</section>
 	<!-- end content-->
