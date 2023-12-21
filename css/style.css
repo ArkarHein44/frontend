@@ -19,6 +19,7 @@ header h2 {
 
 section {
   max-width: 800px;
+  height:300px;
   margin: 20px auto;
   padding: 20px;
   background-color: white;
