@@ -1,5 +1,5 @@
 nav{
-    width: 1200px;
+    width: 1400px;
     background-color: steelblue;
 }
 nav ul{
@@ -8,15 +8,34 @@ nav ul{
     margin: 0;
     padding: 0;
 
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 nav ul li{
     width: 250px;
     height: 50px;
     background-color: green;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    line-height: 50px;
+    float: left;
+
+    border-left: 2px solid #000;
+    transition: background-color .3s;
+}
+
+nav ul li:first-of-type{
+    border-left:none;
+}
+
+nav ul li:hover{
+    background-color: orange;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
 }
