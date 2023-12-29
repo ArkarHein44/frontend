@@ -33,20 +33,122 @@
 		console.log(true+` aung aung`); //true aung aung
 		console.log(`zaw zaw `+ false); // zaw zaw false
 
-		window.alert("Hello Myanmar");
-		window.alert("Save Myanmar");
-		alert("Are you ready to learn JS(Java Script)?");
+		// window.alert("Hello Myanmar");
+		// window.alert("Save Myanmar");
+		// alert("Are you ready to learn JS(Java Script)?");
 
+		// variables(var/ let/ const)
+		// var/let/const variable_name=value;
+
+		var fullname = "Arkar Hein";
+		console.log(fullname); //Arkar Hein
+
+		// concatenate(+)
+		console.log("My friend name is "+fullname)
+		console.log("My friend name is"+" "+fullname)
+
+		var now = 2023;
+		var byear = 1997;
+		var age = now-byear;
+		console.log("Your age is "+age+" years old.");
+		console.log(`Your age is ${age} years old.`) 
+
+		// backticks(``)
+		var lady = "Honey Nwe Oo";
+		console.log("we love "+lady); // we love Honey Nwe Oo
+		console.log(`We love ${lady}.`); // We love Honey Nwe Oo.
+
+		var num1 = 100;
+		const num2 = 200;
+		console.log(num1);
+		console.log(num2);
+		console.log(num1,num2);
+		console.log(num1+num2); // 300
+
+		console.log("num1"+"num2"); //num1num2
+		console.log('num1+num2'); //num1+num2
+		console.log(`num1+num2`);
+
+		console.log(`${num1}+${num2}`); //100+200
+		console.log(`${num1}`+`${num2}`) //100200
+		console.log(`${num1+num2}`); //300
+
+		// override or overwrite
+		var num3 = 30;
+		var num4 = 40;
+
+		console.log("num3 value is = "+num3); //num3 value is = 30
+		console.log("num4 value is = "+num4); // num4 value is = 40
+		console.log(num3+num4); //70
+
+		num3 = 50; //override
+		console.log("num3 value is = "+num3); //num3 value is = 50
+		console.log(num3+num4); //90
+
+		let num5 = 50;
+		console.log(num5); //50
+
+		num5 = 500;
+		console.log(num5); //500
+
+		const num6 = 60;
+		console.log(num6);
+		// const num6 = 70;
+		// num6 = 70;
+		// const can't override of overwrite.
+
+		// Special Escape characters(\)
+
+		console.log("Hay I am working, Do you see now.");
+		console.log("Hay I am 'working', Do you see now.");
+		console.log('Hay I am "working", Do you see now.');
+
+		// console.log("Hay I am "working", Do you see now.") //error
+		// console.log('Hay I am 'working', Do you see now.') //error
+
+		console.log("Hay I'm working and I'm reading.Do you see now?");
+		console.log('He is very tall, about 6ft 4"');
+
+		let x = 'He\'s U Ba.';
+		let y = "He's my \"Uncle\".";
+
+		console.log(`${x}${y}`); // He's U Ba. He is my "Uncle".
+
+		document.write(`${x}${y}`)
+
+		var now = new Date();
+		var dob = new Date('1997-3-2');
+		var ageml = now-dob;
+		var age = ageml /(1000 * 60 * 60 * 24 * 365.25);
+		console.log(age);
 	</script>
 </body>
 </html>
 
-<!-- number datatype
-string datatype
-boolean datatype
+<!-- 	number datatype
+		string datatype
+		boolean datatype
 
 (num+num= calculate) (string+string/ number+string = concat) -->
 
 <!-- `` = backtick (for string) -->
 
 <!-- coment off // -->
+
+<!-- 
+	variables(var/ let/ const)
+	var/let/const variable_name=value;
+
+	variable names
+	we can use(letter,number,_,$)
+	var fitstname = "Tin Htut Aung"; <-- i recomand to use
+	var firstName = "Tin Htut Aung";
+	var first_name = "Tin Htut Aung";
+	var $firstname = "Tin Htut Aung"; 
+	var name1 = "Tin Htut Aung"; <-- i recomand to use
+
+	we cannot use
+	var 1name = "Tin Htut Aung";
+	var @firstname = "Tin Htut Aung";
+	var first name = "Tin Htut Aung";
+ -->
