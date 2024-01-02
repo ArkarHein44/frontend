@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date and Time</title>
+</head>
+<body>
+
+
+    <script type="text/javascript">
+
+        let date = new Date(); // class / Object
+        console.log(date); //Mon Jan 01 2024 20:48:23 GMT+0630 (Myanmar Time)
+        console.log(new Date()); //Mon Jan 01 2024 20:48:23 GMT+0630 (Myanmar Time)
+
+        // let getdate = new Date().getDate();
+        let getdate = date.getDate();
+        console.log(getdate); // 1
+
+        let hour = date.getHours();
+        console.log(hour);
+
+        let minute = date.getMinutes();
+        console.log(minute);
+
+        let second = date.getSeconds();
+        console.log(second);
+
+        //1s = 1000ms
+        // 1 jan 1970 > up to now
+        let time = date.getTime();
+        console.log(time);
+
+        let now = Date.now();
+        console.log(now);
+
+        // array []
+        // index number = 0 [0 to 11]
+            // 0     1      2     3     4     5     6       7     8     9    10   11
+        // ['jan','feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+        let month = date.getMonth(); // 0
+        console.log(month);
+
+
+
+
+    </script>
+</body>
+</html>
