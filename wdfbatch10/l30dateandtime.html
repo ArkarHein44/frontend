@@ -5,6 +5,10 @@
 </head>
 <body>
 
+    <div class="footer">
+        <small>Copyright <span id="autoyear"> 2023 </span> Arkar All Rights Reserved.</small>
+    </div>
+
 
     <script type="text/javascript">
 
@@ -40,7 +44,38 @@
         let month = date.getMonth(); // 0
         console.log(month);
 
+            // 0   1       2    3     4    5       6
+        // ['sun','mon','tue','wed','thu','fri','sat']
+        let day = date.getDay();
+        console.log(day);
 
+        let year = date.getFullYear();
+        console.log(year);
+
+        // Coordinated Universal Time (-12 to +12) (mm- 6:30)
+        let utcyear = date.getUTCFullYear();
+        console.log(utcyear);
+        // innerText textContent innerHTML
+        document.getElementById("autoyear").innerText = utcyear;
+
+        // m d y hr:m:s     
+        let birthday = new Date('12-28-1995'); //Thu Dec 28 1995 00:00:00 GMT+0630 (Myanmar Time)
+            birthday = new Date('12-28-1995 11:35:01'); //Thu Dec 28 1995 11:35:01 GMT+0630 (Myanmar Time)
+            birthday = new Date('July 1 2023 11:35:01') //Sat Jul 01 2023 11:35:01 GMT+0630 (Myanmar Time)
+            birthday = new Date('5/10/2023 11:35:01') //Wed May 10 2023 11:35:01 GMT+0630 (Myanmar Time)
+
+        console.log(birthday);
+
+        birthday.setMonth(2); // Fri Mar 10 2023 11:35:01 GMT+0630 (Myanmar Time)
+        birthday.setDate(15) //Wed Mar 15 2023 11:35:01 GMT+0630 (Myanmar Time)
+        birthday.setFullYear(2024); //Fri Mar 15 2024 11:35:01 GMT+0630 (Myanmar Time)
+
+        birthday.setHours(15); //Fri Mar 15 2024 15:35:01 GMT+0630 (Myanmar Time)
+        birthday.setMinutes(50); //Fri Mar 15 2024 15:50:01 GMT+0630 (Myanmar Time)
+        birthday.setSeconds(59); //Fri Mar 15 2024 15:50:59 GMT+0630 (Myanmar Time)
+        console.log(birthday);
+
+        
 
 
     </script>
