@@ -1,0 +1,24 @@
+
+
+ls	- lists directory contents
+cd	- Change the current directory
+pwd	- present working directory
+cat	- Concatenates 
+echo	- Display arguments to the screen
+exit	- Exit the shell or your current session
+clear	- clear the screen
+
+=>APT (Advanced Packaging Tool)
+
+sudo apt-get update
+sudo apt update
+
+sudo apt-get upgrade
+sudo apt upgrade
+
+everytime install software check this
+sudo apt-get upgrade -y
+sudo apt upgrade -y
+
+for one line code
+sudo apt-get update && sudo apt-get upgrade -y

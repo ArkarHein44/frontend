@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Center content vertically */
+        }
+
+        p {
+            text-align: center;
+            margin: 0; /* Remove default margin */
+        }
+
+        .head,
+        .main,
+        nav,
+        section,
+        aside,
+        .foot,
+        .sechead,
+        article,
+        .secfoot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head,
+        .main,
+        .nav,
+        .section,
+        .aside,
+        .foot {
+            width: 700px;
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        nav,
+        section,
+        aside {
+            width: 174px;
+            height: 100%;
+            float: left;
+        }
+
+        section {
+            width: 346px;
+        }
+
+        article {
+            height: 397px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <p>header</p>
+        </header>
+        <div class="main">
+            <nav>
+                <p>nav</p>
+            </nav>
+            <section>
+                <header class="sechead">
+                    <p>header</p>
+                </header>
+                <article>
+                    <p>article</p>
+                </article>
+                <footer class="secfoot">
+                    <p>footer</p>
+                </footer>
+            </section>
+            <aside>
+                <p>aside</p>
+            </aside>
+        </div>
+        <footer class="foot">
+            <p>footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
